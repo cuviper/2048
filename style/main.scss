@@ -454,13 +454,22 @@ hr {
 
       // Set background
       background: $mixed-background;
+      &.tile-negative {
+        background: adjust-hue($mixed-background, 210);
+      }
 
       // Add glow
       $glow-opacity: max($exponent - 4, 0) / ($limit - 4);
+      $glow-color: rgba($tile-gold-glow-color, $glow-opacity / 1.8);
+      $glow-white: rgba(white, $glow-opacity / 3);
 
       @if not $special-background {
-        box-shadow: 0 0 30px 10px rgba($tile-gold-glow-color, $glow-opacity / 1.8),
-                    inset 0 0 0 1px rgba(white, $glow-opacity / 3);
+        box-shadow: 0 0 30px 10px $glow-color,
+                    inset 0 0 0 1px $glow-white;
+        &.tile-negative {
+          box-shadow: 0 0 30px 10px adjust-hue($glow-color, 210),
+                      inset 0 0 0 1px $glow-white;
+        }
       }
 
       // Adjust font size for bigger numbers
@@ -481,6 +490,12 @@ hr {
     }
 
     $exponent: $exponent + 1;
+  }
+
+  // Zero tiles
+  &.tile-0 .tile-inner {
+    color: $bright-text-color;
+    background: mix(#333, $tile-color, 50%);
   }
 
   // Super tiles (above 2048)
