@@ -234,6 +234,7 @@ hr {
     display: block;
     margin-top: 29px; }
   .game-message .mailing-list {
+    display: none;
     margin-top: 52px; }
     .game-message .mailing-list strong {
       display: block;
@@ -255,7 +256,7 @@ hr {
     .game-message a.keep-playing-button {
       display: none; }
   .game-message .score-sharing {
-    display: inline-block;
+    display: none;
     vertical-align: middle;
     margin-left: 10px; }
   .game-message.game-won {
@@ -622,6 +623,7 @@ hr {
   margin-top: 50px; }
 
 .sharing {
+  display: none;
   margin-top: 20px;
   text-align: center; }
   .sharing > iframe, .sharing > span, .sharing > form {
@@ -712,6 +714,7 @@ hr {
       display: block;
       margin-top: 29px; }
     .game-message .mailing-list {
+      display: none;
       margin-top: 52px; }
       .game-message .mailing-list strong {
         display: block;
@@ -733,7 +736,7 @@ hr {
       .game-message a.keep-playing-button {
         display: none; }
     .game-message .score-sharing {
-      display: inline-block;
+      display: none;
       vertical-align: middle;
       margin-left: 10px; }
     .game-message.game-won {

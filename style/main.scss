@@ -275,6 +275,7 @@ hr {
     }
 
     .mailing-list {
+      display: none; // disabled on ±64
       margin-top: 52px;
 
       strong {
@@ -299,7 +300,8 @@ hr {
     }
 
     .score-sharing {
-      display: inline-block;
+      //display: inline-block;
+      display: none; // disabled on ±64
       vertical-align: middle;
       margin-left: 10px;
     }
@@ -570,6 +572,7 @@ hr {
 }
 
 .sharing {
+  display: none; // disabled on ±64
   margin-top: 20px;
   text-align: center;
 
