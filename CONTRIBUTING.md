@@ -1,6 +1,8 @@
 # Contributing
 Changes and improvements are more than welcome! Feel free to fork and open a pull request.
 
+Changes which would also be applicable to the original 2048 are encouraged to submit there first.
+
 Please follow the house rules to have a bigger chance of your contribution being merged.
 
 ## House rules
