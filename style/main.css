@@ -234,7 +234,6 @@ hr {
     display: block;
     margin-top: 29px; }
   .game-message .mailing-list {
-    display: none;
     margin-top: 52px; }
     .game-message .mailing-list strong {
       display: block;
@@ -625,11 +624,9 @@ hr {
 .sharing {
   margin-top: 20px;
   text-align: center; }
-  .sharing > iframe {
+  .sharing > iframe, .sharing > span, .sharing > form {
     display: inline-block;
     vertical-align: middle; }
-  .sharing > span, .sharing > form {
-    display: none; }
 
 @media screen and (max-width: 520px) {
   html, body {
@@ -715,7 +712,6 @@ hr {
       display: block;
       margin-top: 29px; }
     .game-message .mailing-list {
-      display: none;
       margin-top: 52px; }
       .game-message .mailing-list strong {
         display: block;

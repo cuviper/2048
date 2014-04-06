@@ -275,7 +275,6 @@ hr {
     }
 
     .mailing-list {
-      display: none; // disabled on ±64
       margin-top: 52px;
 
       strong {
@@ -574,13 +573,9 @@ hr {
   margin-top: 20px;
   text-align: center;
 
-  > iframe {
+  > iframe, > span, > form {
     display: inline-block;
     vertical-align: middle;
-  }
-  // donate buttons disabled on ±64
-  > span, > form {
-    display: none;
   }
 }
 
