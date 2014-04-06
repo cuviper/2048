@@ -300,8 +300,7 @@ hr {
     }
 
     .score-sharing {
-      //display: inline-block;
-      display: none; // disabled on ±64
+      display: inline-block;
       vertical-align: middle;
       margin-left: 10px;
     }
@@ -572,13 +571,16 @@ hr {
 }
 
 .sharing {
-  display: none; // disabled on ±64
   margin-top: 20px;
   text-align: center;
 
-  > iframe, > span, > form {
+  > iframe {
     display: inline-block;
     vertical-align: middle;
+  }
+  // donate buttons disabled on ±64
+  > span, > form {
+    display: none;
   }
 }
 

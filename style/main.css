@@ -256,7 +256,7 @@ hr {
     .game-message a.keep-playing-button {
       display: none; }
   .game-message .score-sharing {
-    display: none;
+    display: inline-block;
     vertical-align: middle;
     margin-left: 10px; }
   .game-message.game-won {
@@ -623,12 +623,13 @@ hr {
   margin-top: 50px; }
 
 .sharing {
-  display: none;
   margin-top: 20px;
   text-align: center; }
-  .sharing > iframe, .sharing > span, .sharing > form {
+  .sharing > iframe {
     display: inline-block;
     vertical-align: middle; }
+  .sharing > span, .sharing > form {
+    display: none; }
 
 @media screen and (max-width: 520px) {
   html, body {
@@ -736,7 +737,7 @@ hr {
       .game-message a.keep-playing-button {
         display: none; }
     .game-message .score-sharing {
-      display: none;
+      display: inline-block;
       vertical-align: middle;
       margin-left: 10px; }
     .game-message.game-won {
