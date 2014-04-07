@@ -1,7 +1,7 @@
 # ±64
 A derivative of [2048](http://gabrielecirulli.github.io/2048/), which is a small clone of [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), based on [Saming's 2048](http://saming.fr/p/2048/) (also a clone).
 
-The twist is the addition of negative numbers.
+The twist is the addition of negative numbers.  Get **both** 64 and -64 to win!
 
 Made just for fun. [Play it here!](http://cuviper.github.io/pm64/)
 
@@ -18,9 +18,9 @@ Many thanks to [rayhaanj](https://github.com/rayhaanj), [Mechazawa](https://gith
 
 ### Screenshot
 
-![Screenshot](./meta/screenshot-588.png)
+![Screenshot](./meta/screenshot-imminent-win.png)
 
-That screenshot is close to a win, but it's about to run out of moves...
+That screenshot already has -64, and it's all lined up to create +64 for the win!
 
 ## Contributing
 Changes and improvements are more than welcome! Feel free to fork and open a pull request. Please make your changes in a specific branch and request to pull into `master`! If you can, please make sure the game fully works before sending the PR, as that will help speed up the process.
