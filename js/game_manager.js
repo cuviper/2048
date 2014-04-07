@@ -46,12 +46,16 @@ GameManager.prototype.setup = function () {
     this.score       = previousState.score;
     this.over        = previousState.over;
     this.won         = previousState.won;
+    this.wonHigh     = previousState.wonHigh;
+    this.wonLow      = previousState.wonLow;
     this.keepPlaying = previousState.keepPlaying;
   } else {
     this.grid        = new Grid(this.size);
     this.score       = 0;
     this.over        = false;
     this.won         = false;
+    this.wonHigh     = false;
+    this.wonLow      = false;
     this.keepPlaying = false;
 
     // Add the initial tiles
@@ -109,6 +113,8 @@ GameManager.prototype.serialize = function () {
     score:       this.score,
     over:        this.over,
     won:         this.won,
+    wonHigh:     this.wonHigh,
+    wonLow:      this.wonLow,
     keepPlaying: this.keepPlaying
   };
 };
@@ -171,8 +177,10 @@ GameManager.prototype.move = function (direction) {
           // Update the score
           self.score += Math.abs(merged.value);
 
-          // The mighty 64 tile
-          if (Math.abs(merged.value) === 64) self.won = true;
+          // The mighty ±64 tiles
+          if (merged.value === 64) self.wonHigh = true;
+          if (merged.value === -64) self.wonLow = true;
+          self.won = self.wonHigh && self.wonLow;
         } else {
           self.moveTile(tile, positions.farthest);
         }
